@@ -32,9 +32,9 @@ app.use('/api/category', categoryRoute);
 app.use('/api/product', productRoute);
 
 // rest api
-app.use('*', function(req,res){
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+// app.use('*', function(req,res){
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// });
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to our ecommerce app</h1>");
 });
