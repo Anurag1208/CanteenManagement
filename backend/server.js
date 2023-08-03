@@ -35,9 +35,9 @@ app.use('/api/product', productRoute);
 app.use('*', function(req,res){
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
-// app.get("/", (req, res) => {
-//   res.send("<h1>Welcome to our ecommerce app</h1>");
-// });
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to our ecommerce app</h1>");
+});
 
 // Port
 app.listen(process.env.PORT || 8080, () => {
